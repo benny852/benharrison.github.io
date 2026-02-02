@@ -1,3 +1,7 @@
+/* ============================= */
+/* GLOBAL STYLING */
+/* ============================= */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,8 +10,12 @@ body {
   text-align: center;
 }
 
-header {
-  padding: 30px;
+section {
+  padding: 80px 10%;
+}
+
+nav {
+  margin-top: 20px;
 }
 
 nav a {
@@ -16,6 +24,29 @@ nav a {
   font-weight: bold;
   color: #0050c8;
 }
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* ============================= */
+/* UNIVERSAL PAGE TITLES */
+/* ============================= */
+
+.page-title {
+  font-size: 80px;
+  font-weight: 900;
+  color: #0050c8;
+  margin: 40px 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+/* ============================= */
+/* HERO SECTION (HOME PAGE) */
+/* ============================= */
 
 .small-title {
   font-size: 13px;
@@ -31,7 +62,15 @@ nav a {
 
 .hero-text h1 {
   font-size: 80px;
+  font-weight: 900;
   color: #0050c8;
+  margin: 40px 0;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .btn {
@@ -39,58 +78,167 @@ nav a {
   background: #0050c8;
   color: white;
   padding: 15px 40px;
-  border-radius: 30px;
   text-decoration: none;
-  margin: 10px;
+  font-weight: bold;
+  width: 200px;
+
+  /* Square edges */
+  border-radius: 0px;
+
+  transition: 0.2s ease;
 }
 
-.overview-grid,
+.btn:hover {
+  transform: translateY(-4px);
+}
+
+.hero-image img {
+  width: 280px;
+  border-radius: 0px;
+}
+
+
+/* ============================= */
+/* OVERVIEW PAGE */
+/* ============================= */
+
+.overview-section {
+  padding-top: 60px;
+}
+
+.overview-grid {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+/* Square Navigation Boxes */
+.overview-box {
+  width: 270px;
+  height: 170px;
+  background: #0050c8;
+  color: white;
+
+  text-decoration: none;
+  padding: 25px;
+
+  /* Square corners */
+  border-radius: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transition: 0.25s ease;
+}
+
+.overview-box h3 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.overview-box p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.overview-box:hover {
+  transform: translateY(-8px);
+}
+
+
+/* ============================= */
+/* BENGINEERINGS BRAND BOX */
+/* ============================= */
+
+.branding-box {
+  margin-top: 80px;
+  padding: 45px;
+
+  border: 3px solid #0050c8;
+  background: white;
+
+  /* Square like Canva */
+  border-radius: 0px;
+
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.branding-box h2 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #0050c8;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+
+/* ============================= */
+/* PROJECT CARDS (PROJECTS PAGE) */
+/* ============================= */
+
 .project-grid {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
   flex-wrap: wrap;
-}
-
-.card {
-  width: 250px;
-  padding: 30px;
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-.blue {
-  background: #0050c8;
-  color: white;
 }
 
 .project-card {
   border: 2px solid #0050c8;
-  border-radius: 20px;
+  width: 240px;
   padding: 20px;
-  width: 220px;
+
+  /* Square */
+  border-radius: 0px;
+
   text-decoration: none;
   color: #003366;
+
+  transition: 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
 }
 
 .project-card img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 0px;
 }
+
+.project-card h3 {
+  margin-top: 15px;
+  font-weight: 900;
+}
+
+
+/* ============================= */
+/* CONTACT FORM */
+/* ============================= */
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 400px;
+  max-width: 420px;
   margin: auto;
 }
 
 .contact-form input,
 .contact-form select {
   padding: 12px;
-  border-radius: 6px;
   border: 1px solid #ccc;
+  font-size: 15px;
+
+  /* Square */
+  border-radius: 0px;
 }
 
 .contact-form button {
@@ -99,5 +247,14 @@ nav a {
   background: #4a2d2d;
   color: white;
   font-weight: bold;
-  border-radius: 30px;
+  cursor: pointer;
+
+  /* Square */
+  border-radius: 0px;
+
+  transition: 0.25s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-4px);
 }
