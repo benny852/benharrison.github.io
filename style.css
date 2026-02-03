@@ -272,21 +272,20 @@ nav a:hover {
 
 .branding-box {
   margin-top: 80px;
-  padding: 45px;
+  padding: 50px 80px;
 
-  border: 3px solid #0050c8;
-  background: white;
+  border: 3px solid #1b5e3f;
+  background: #1b5e3f;
 
   /* Square like Canva */
   border-radius: 0px;
 
-  max-width: 520px;
+  max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
 
   text-decoration: none;
   display: inline-block;
-  width: 100%;
   box-sizing: border-box;
 
   transition: 0.25s ease;
@@ -299,7 +298,7 @@ nav a:hover {
 .branding-box h2 {
   font-size: 52px;
   font-weight: 900;
-  color: #0050c8;
+  color: white;
   margin: 0;
   letter-spacing: 4px;
 }
@@ -352,16 +351,17 @@ nav a:hover {
 .product-grid {
   display: flex;
   justify-content: center;
-  gap: 5px;
-  flex-wrap: wrap;
+  gap: 8px;
+  flex-wrap: nowrap;
 }
 
 .product-card {
-  width: 500px;
-  height: 675px;
+  width: 22%;
+  height: auto;
+  aspect-ratio: 4 / 5.4;
 
   /* Rounded corners */
-  border-radius: 25%;
+  border-radius: 10%;
 
   text-decoration: none;
   color: white;
