@@ -13,42 +13,25 @@
     <h1 class="page-title">CUSTOMISED PHONE CASES</h1>
 
     <nav>
-      <a href="index.html">Home</a>
-      <a href="purchasable.html">Purchasable Goods</a>
-      <a href="purchasable-keychains.html">Key Chains</a>
-      <a href="bengineerings.html">Bengineerings</a>
-      <a href="purchasable-phones.html">Phone Cases</a>
-      <a href="purchasable-valentines.html">Valentines</a>
-      <a href="purchasable-other.html">Other</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html">HOME</a>
+      <a href="purchasable.html">PURCHASABLE GOODS</a>
+      <a href="bengineerings.html">BENGINEERINGS</a>
+      <a href="contact.html">CONTACT</a>
     </nav>
   </header>
 
 
-<section class="product-details">
-
-  <h2>Customised Phone Cases</h2>
-  <p>Welcome to the Customised Phone Cases collection! Protect your device in style with our unique designs.</p>
-
-  <div class="product-list">
-    <!-- Add product items here -->
-  </div>
-
-</section>
-
 <!-- Phone cases custom layout (StudioTheory(2) inspired) -->
 <section class="phone-hero">
-  <h2>PHONE CASES</h2>
-  <p class="subtle">PURCHASE AN EXISTING DESIGN OR CUSTOMISE FOR YOURSELF!</p>
 
   <div class="top-cards">
-    <div class="top-card">
+    <a href="#choose-existing" class="top-card">
       <div class="card-label">CHOOSE AN EXISTING<br><span class="muted">FROM A RANGE OF OPTIONS</span></div>
-    </div>
+    </a>
 
-    <div class="top-card">
+    <a href="#create-your-own" class="top-card">
       <div class="card-label">CREATE YOUR OWN<br><span class="muted">WITH YOUR OWN GRAPHICS AND WRITING</span></div>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -61,23 +44,20 @@
     </div>
 
     <div class="order-form">
-      <form class="inquiry-form">
-        <input type="text" placeholder="Name" required>
-        <input type="text" placeholder="Phone Number">
-        <label class="form-label">Model</label>
-        <select>
-          <option>iPhone 15 Pro</option>
-          <option>iPhone 14</option>
-          <option>Samsung S23</option>
-        </select>
+      <form class="inquiry-form" action="https://formspree.io/f/xyzpqrst" method="POST">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Phone Number" name="phone">
+        <input type="text" placeholder="Phone Model" name="model" required>
 
-        <input type="text" placeholder="What you'd like to write on the side">
+        <input type="text" placeholder="What you'd like to write on the side" name="side_text">
 
         <button type="submit" class="btn">Confirm my order</button>
       </form>
     </div>
   </div>
 </section>
+
+<hr class="section-divider">
 
 <section id="create-your-own" class="create-your-own">
   <h2>CREATE YOUR OWN</h2>
@@ -89,54 +69,59 @@
         <p>Find or draw something you love. Tip: Try and make it something with thick outlines.</p>
       </div>
     </div>
+    <div class="step-images">
+      <img src="assets/images/yahweh.png" alt="Yahweh design inspiration">
+    </div>
   </div>
 
-  <div class="create-step-row reverse">
-    <div class="step-images">
-      <img src="assets/images/image-inspiration.png" alt="Image inspiration examples">
-    </div>
+  <div class="create-step-row">
     <div class="step-content">
       <div class="step-copy">
         <h3>STEP TWO.</h3>
         <p>Upload the image in the highest quality you can. Bonus points if you can upload it as an SVG.</p>
       </div>
     </div>
+    <div class="step-images">
+      <img src="assets/images/image-inspiration.png" alt="Image inspiration examples">
+    </div>
   </div>
 
   <div class="create-step-row">
-    <div class="step-images">
-      <img src="assets/images/text-inspiration.png" alt="Text inspiration examples">
-    </div>
     <div class="step-content">
       <div class="step-copy">
         <h3>STEP THREE.</h3>
         <p>Write or add any other custom text you'd like, in any font!</p>
       </div>
     </div>
+    <div class="step-images">
+      <img src="assets/images/text-inspiration.png" alt="Text inspiration examples">
+    </div>
   </div>
 
   <div class="create-final">
     <h2>NOW PUT IT ALL TOGETHER.</h2>
     <div class="final-form-wrapper">
-      <form class="inquiry-form final-form">
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Phone Number">
-        <input type="text" placeholder="Phone Model">
-        <input type="text" placeholder="Custom Graphic">
-        <input type="text" placeholder="Custom Text">
+      <form class="inquiry-form final-form" action="https://formspree.io/f/xyzpqrst" method="POST">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Phone Number" name="phone">
+        <input type="text" placeholder="Phone Model" name="phone_model" required>
         <label class="form-label">Colour Combination</label>
-        <select>
+        <select name="colour">
           <option>Black Background | White Graphics + Text</option>
           <option>White Background | Black Graphics + Text</option>
         </select>
-        <button type="submit" class="btn">AND I'LL TAKE CARE OF THE REST!</button>
+        <label class="form-label">Custom Files</label>
+        <label class="file-label">Image</label>
+        <input type="file" name="image" accept="image/*">
+        <label class="file-label">Text Image</label>
+        <input type="file" name="text_image" accept="image/*">
+        <label class="file-label">Case Layout (optional)</label>
+        <input type="file" name="case_layout" accept="image/*">
+        <button type="submit" class="btn">CONFIRM</button>
       </form>
     </div>
   </div>
 
-  <div class="back-button">
-    <a href="purchasable.html" class="btn">BACK TO PURCHASABLE GOODS</a>
-  </div>
 </section>
 
 </body>

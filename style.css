@@ -44,7 +44,7 @@ nav a:hover {
 /* ============================= */
 
 .page-title {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 900;
   color: var(--accent);
   margin: 40px 0 20px 0;
@@ -516,6 +516,8 @@ nav a:hover {
   border-radius: 0px;
 
   transition: 0.25s ease;
+  width: 100%;
+  text-align: center;
 }
 
 .inquiry-form button:hover {
@@ -555,6 +557,28 @@ nav a:hover {
   text-align: left;
 }
 
+.form-label {
+  color: var(--primary);
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 900;
+  display: block;
+  text-align: center;
+}
+
+.file-label {
+  color: var(--primary);
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  display: block;
+  text-align: left;
+}
+
 .product-select {
   width: 100%;
 }
@@ -591,19 +615,14 @@ nav a:hover {
 .phone-hero {
   padding: 60px 10% 40px;
   background: var(--bg-cream);
+  border-bottom: 2px solid var(--muted-border);
 }
 .phone-hero h2 {
   font-size: 48px;
   letter-spacing: 3px;
   color: var(--primary);
-  margin: 10px 0 5px 0;
+  margin: 10px 0 30px 0;
   text-transform: uppercase;
-}
-.phone-hero .subtle {
-  font-size: 13px;
-  color: var(--text);
-  margin-bottom: 40px;
-  letter-spacing: 1px;
 }
 .top-cards {
   display: flex;
@@ -624,6 +643,11 @@ nav a:hover {
   position: relative;
   padding: 20px;
   text-align: center;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+.top-card:hover {
+  transform: translateY(-6px);
 }
 .card-label { 
   font-weight: 900; 
@@ -646,7 +670,7 @@ nav a:hover {
   background: var(--bg-cream);
 }
 .choose-existing h2 { 
-  color: var(--accent); 
+  color: var(--primary); 
   margin-bottom: 40px;
   font-size: 36px;
 }
@@ -658,11 +682,11 @@ nav a:hover {
   flex-wrap: wrap;
 }
 .sample-images { 
-  flex: 0 1 320px;
+  flex: 0 1 420px;
 }
 .sample-images img { 
   width: 100%; 
-  max-width: 320px;
+  max-width: 420px;
   border-radius: 8px;
 }
 .order-form { 
@@ -699,15 +723,21 @@ nav a:hover {
   flex-direction: row-reverse;
 }
 .step-images {
-  flex: 0 1 380px;
+  flex: 0 1 360px;
+  width: 100%;
 }
 .step-images img {
   width: 100%;
-  max-width: 380px;
+  max-width: 360px;
   border-radius: 8px;
+  display: block;
+  margin: 0 auto;
 }
 .step-content {
   flex: 0 1 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .step-copy h3 { 
   color: var(--primary); 
@@ -723,8 +753,10 @@ nav a:hover {
 }
 
 .create-final { 
-  padding: 70px 0 50px;
+  padding: 70px 10%;
   text-align: center;
+  background: #f8faf7;
+  margin: 50px -10% 0;
 }
 .create-final h2 { 
   color: var(--primary); 
@@ -797,4 +829,14 @@ nav a:hover {
   .top-cards { gap:20px; flex-direction:column; align-items:center }
   .choose-grid { flex-direction:column }
   .create-step { flex-direction:column }
+}
+
+.section-divider {
+  border: none;
+  border-top: 2px solid var(--muted-border);
+  margin: 40px 0;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
