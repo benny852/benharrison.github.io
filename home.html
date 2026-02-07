@@ -9,61 +9,76 @@
 </head>
 <body>
 
+
+
 <header>
   <p class="small-title">ENGINEERING PORTFOLIO</p>
   <nav>
     <a href="#whoami">Who Am I</a>
     <a href="#overview">Overview</a>
     <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section id="whoami" class="whoami-section">
-  <h1 class="page-title">BEN HARRISON</h1>
-  <div class="hero-image"><img src="assets/images/profile-picture.png" alt="Profile Photo"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="page-title">BEN HARRISON</h1>
+      <div class="hero-vertical-buttons">
+        <a href="#whoami" class="vertical-btn">WHO AM I</a>
+        <a href="#overview" class="vertical-btn">OVERVIEW</a>
+        <a href="#projects" class="vertical-btn">PROJECTS</a>
+      </div>
+    </div>
+    <div class="hero-image"><img src="assets/images/profile-picture.png" alt="Profile Photo" style="border-radius:0; width:340px; height:auto;"></div>
+  </div>
+  <div class="whoami-images-row">
+    <img src="assets/about/robot-arm.png" alt="Robot Arm" class="whoami-img whoami-img-topleft">
+    <img src="assets/about/rt-2024.png" alt="RT 2024" class="whoami-img whoami-img-topright">
+  </div>
+  <h2 class="section-title">WHO AM I</h2>
   <div class="whoami-content">
     <p>I am a final-year mechanical and mechatronics student at the University of Technology Sydney.</p>
-    <p>I am extremely passionate about my work, and invested in creating innovative engineering solutions through robotics and design.</p>
-    <p class="quote">Colossians 3:17</p>
+    <p>I am extremely passionate about my work, and especially invested in creating innovative solutions through the emergence of mechatronics in Australia.</p>
+    <p>My passions expand beyond engineering, such as artwork and sporting, which I try to intertwine with engineering.</p>
+    <p>And most importantly my faith in God,<br>
+    I believe Jesus is Lord.<br>
+    It is in Him that I find Joy!</p>
+    <p class="quote"><b>Colossians 3:17</b></p>
+  </div>
+  <div class="whoami-images-row whoami-images-bottom">
+    <img src="assets/about/uts-building.png" alt="UTS Building" class="whoami-img whoami-img-bottomleft">
+    <img src="assets/about/blue-board.png" alt="Blue Board" class="whoami-img whoami-img-bottomright">
   </div>
 </section>
 
 <section id="overview" class="overview-section">
   <h2 class="section-title">OVERVIEW</h2>
   <div class="overview-grid">
-    <a href="#whoami" class="overview-box">
-      <h3>WHO AM I</h3>
-      <p>Get to know me and my vision!</p>
-    </a>
-    <a href="#projects" class="overview-box">
-      <h3>PROJECTS</h3>
-      <p>Some of the cool work I’ve done recently.</p>
-    </a>
-    <a href="#contact" class="overview-box">
-      <h3>CONTACT</h3>
-      <p>Get in touch with me!</p>
-    </a>
+    <a href="#whoami" class="overview-box"> <h3>WHO AM I</h3> <p>Get to know me and my vision!</p> </a>
+    <a href="#projects" class="overview-box"> <h3>PROJECTS</h3> <p>Some of the cool work I’ve done recently.</p> </a>
+    <a href="#contact" class="overview-box"> <h3>CONTACT</h3> <p>Get in touch with me!</p> </a>
+    <a href="bengineerings.html" class="overview-box bengineerings-box"> <h3>BENGINEERINGS</h3> </a>
   </div>
 </section>
 
 <section id="projects" class="projects-section">
   <h2 class="section-title">PROJECTS</h2>
   <div class="projects-flex">
-    <div class="project-item">
-      <img src="assets/projects/toaster.png" alt="University Project">
+    <a href="university.html" class="project-item project-link">
+      <img src="assets/projects/toaster.png" alt="University Project" style="background:transparent;">
       <div class="project-label">UNIVERSITY</div>
-    </div>
+    </a>
     <div class="project-divider"></div>
-    <div class="project-item">
-      <img src="assets/projects/work-setup.png" alt="Work Project">
+    <a href="work.html" class="project-item project-link">
+      <img src="assets/projects/work-setup.png" alt="Work Project" style="background:transparent;">
       <div class="project-label">WORK</div>
-    </div>
+    </a>
     <div class="project-divider"></div>
-    <div class="project-item">
-      <img src="assets/projects/watch.png" alt="Personal Project">
+    <a href="personal.html" class="project-item project-link">
+      <img src="assets/projects/watch.png" alt="Personal Project" style="background:transparent;">
       <div class="project-label">PERSONAL</div>
-    </div>
+    </a>
   </div>
 </section>
 
