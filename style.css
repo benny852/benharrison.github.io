@@ -73,13 +73,17 @@ nav a:hover {
 }
 .hero-content {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: nowrap;
   gap: 80px;
-  padding-top: 60px;
+  padding-top: 0px; /* Text as high as possible */
   padding-left: 60px;
   box-sizing: border-box;
+  margin-bottom: 120px; /* Increased space to WHO AM I */
+  min-height: 60vh;
+  align-items: flex-start;
 }
 .hero-text {
   display: flex;
@@ -254,10 +258,10 @@ nav a:hover {
   display: block;
 }
 .section-title {
-  font-size: 2.5em;
-  font-weight: 900;
+  font-size: 2.2em;
+  font-weight: 700;
   color: var(--accent);
-  margin-bottom: 32px;
+  margin: 120px 0 24px 0; /* Large margin to push WHO AM I down */
   text-align: center;
   letter-spacing: 2px;
 }
