@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Projects | Ben Harrison</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    .video-section {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #111;
+      position: relative;
+      overflow: hidden;
+    }
+    .uni-video {
+      width: 100vw;
+      height: 100vh;
+      min-width: 100vw;
+      min-height: 100vh;
+      object-fit: cover;
+      display: block;
+      background: #111;
+      border: none;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      transform: translateY(40px) scale(0.98);
+      transition: opacity 0.7s cubic-bezier(.68,-0.55,.27,1.55), transform 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+    }
+    .uni-video.active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="video-section">
+      <video class="uni-video" src="videos/university/1.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="video-section">
+      <video class="uni-video" src="videos/university/2.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="video-section">
+      <video class="uni-video" src="videos/university/3.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="video-section">
+      <video class="uni-video" src="videos/university/4.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="video-section">
+      <video class="uni-video" src="videos/university/5.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="video-section">
+      <video class="uni-video" src="videos/university/6.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="video-section">
+      <video class="uni-video" src="videos/university/7.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="video-section">
+      <video class="uni-video" src="videos/university/8.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="video-section">
+      <video class="uni-video" src="videos/university/9.mp4" autoplay loop muted playsinline></video>
+    </div>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const videos = document.querySelectorAll('.uni-video');
+      const observer = new window.IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          } else {
+            entry.target.classList.remove('active');
+          }
+        });
+      }, { threshold: 0.25 });
+      videos.forEach(video => observer.observe(video));
+    });
+  </script>
+</body>
+</html>
