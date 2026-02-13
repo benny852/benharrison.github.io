@@ -57,14 +57,17 @@ window.addEventListener('DOMContentLoaded', function() {
     </div>
 
     <div class="order-form">
-      <form class="inquiry-form" action="https://formspree.io/f/xyzpqrst" method="POST">
-        <form class="inquiry-form" action="mailto:bengineerings.sydney@gmail.com" method="POST" enctype="text/plain">
-          <input type="text" placeholder="Name" name="name" required>
-          <input type="text" placeholder="Phone Number" name="phone">
-          <input type="text" placeholder="Phone Model" name="model" required>
-          <input type="text" placeholder="What you'd like to write on the side" name="side_text">
-          <button type="submit" class="btn">CONFIRM</button>
-        </form>
+      <form class="inquiry-form" action="https://formspree.io/f/xbdagpjo" method="POST">
+        <input type="text" name="Full Name" placeholder="Full Name" required>
+        <input type="text" name="EmailOrInstagram" placeholder="Email Address or Instagram (optional)">
+        <input type="text" name="Phone" placeholder="Phone Number">
+        <input type="text" name="SideText" placeholder="Side text">
+        <select id="case-design-select" name="Case Design" required>
+          <option value="" disabled selected>Case Design</option>
+          <option value="SPIDERMAN">SPIDERMAN</option>
+          <option value="MAKE JESUS KNOWN">MAKE JESUS KNOWN</option>
+        </select>
+        <button type="submit" class="btn">CONFIRM</button>
       </form>
     </div>
   </div>
@@ -118,6 +121,7 @@ window.addEventListener('DOMContentLoaded', function() {
         <input type="text" placeholder="Name" name="name" required>
         <input type="text" placeholder="Phone Number" name="phone">
         <input type="text" placeholder="Phone Model" name="phone_model" required>
+          <input type="text" placeholder="Image Prompt (e.g. batman)" name="image_prompt">
         <label class="form-label">Colour Combination</label>
         <select name="colour">
           <option>Black Background | White Graphics + Text</option>

@@ -55,17 +55,13 @@ window.addEventListener('DOMContentLoaded', function() {
     <div class="sample-images">
       <img src="assets/keychains/red2026.png" alt="Keychain model photo">
     </div>
-    <div class="order-form">
-      <form class="inquiry-form" action="https://formspree.io/f/xyzpqrst" method="POST">
-        <form class="inquiry-form" action="mailto:bengineerings.sydney@gmail.com" method="POST" enctype="text/plain">
-          <input type="text" placeholder="Name" name="name" required>
-          <input type="text" placeholder="Phone Number" name="phone">
-          <input type="text" placeholder="Keychain Type/Model" name="model" required>
-          <input type="text" placeholder="What you'd like to write or engrave" name="side_text">
-          <button type="submit" class="btn">CONFIRM</button>
-        </form>
-      </form>
-    </div>
+    <form class="inquiry-form" action="https://formspree.io/f/maqdelyp" method="POST">
+      <input type="text" placeholder="Name" name="name" required>
+      <input type="text" placeholder="Phone Number" name="phone">
+      <input type="text" placeholder="Keychain Type/Model" name="model" required>
+      <input type="text" placeholder="What you'd like to write or engrave" name="side_text">
+      <button type="submit" class="btn">CONFIRM</button>
+    </form>
   </div>
 </section>
 
@@ -73,7 +69,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
 <section id="create-your-own" class="create-your-own">
   <h2>CREATE YOUR OWN</h2>
-
   <div class="create-step-row">
     <div class="step-content">
       <div class="step-copy">
@@ -83,53 +78,48 @@ window.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="step-images">
       <img src="assets/keychains/keys-show.png" alt="Keychain design inspiration">
-              <form class="inquiry-form" action="mailto:bengineerings.sydney@gmail.com" method="POST" enctype="text/plain">
-                <input type="text" placeholder="Name" name="name" required>
-                <input type="text" placeholder="Phone Number" name="phone">
-                <input type="text" placeholder="Keychain Type/Model" name="model" required>
-                <input type="text" placeholder="What you'd like to write or engrave" name="side_text">
-                <button type="submit" class="btn">CONFIRM</button>
-              </form>
-        <p>Upload the image in the highest quality you can. Bonus points if you can upload it as an SVG.</p>
-      </div>
+      <h3>STEP TWO.</h3>
+      <p>Upload the image in the highest quality you can. Bonus points if you can upload it as an SVG.</p>
     </div>
     <div class="step-images">
       <img src="assets/keychains/keychain-inspiration.png" alt="Keychain inspiration examples">
     </div>
   </div>
+</section>
+
 
   <div class="create-final">
     <h2>NOW PUT IT ALL TOGETHER.</h2>
     <div class="final-form-wrapper">
-      <form class="inquiry-form final-form" action="https://formspree.io/f/xyzpqrst" method="POST">
-              <form class="inquiry-form final-form" action="mailto:bengineerings.sydney@gmail.com" method="POST" enctype="text/plain">
-                <input type="text" placeholder="Name" name="name" required>
-                <input type="text" placeholder="Phone Number" name="phone">
-                <input type="text" placeholder="Keychain Type/Model" name="keychain_model" required>
-                <label class="form-label">Colour Combination</label>
-                <select name="colour" id="colour-select" onchange="toggleOtherColour()">
-                  <option value="Red | White Engraving">Red | White Engraving</option>
-                  <option value="Black | White Engraving">Black | White Engraving</option>
-                  <option value="Other">Other</option>
-                </select>
-                <input type="text" name="other_colour" id="other-colour-input" placeholder="Describe your custom colour/engraving" style="display:none; margin-top:10px;" />
-                <script>
-                function toggleOtherColour() {
-                  var select = document.getElementById('colour-select');
-                  var input = document.getElementById('other-colour-input');
-                  if (select.value === 'Other') {
-                    input.style.display = 'block';
-                  } else {
-                    input.style.display = 'none';
-                  }
-                }
-                </script>
-                <button type="submit" class="btn">CONFIRM</button>
-              </form>
-        <label class="file-label">Text Image</label>
-        <input type="file" name="text_image" accept="image/*">
-        <label class="file-label">Keychain Layout (optional)</label>
-        <input type="file" name="keychain_layout" accept="image/*">
+      <form class="inquiry-form final-form" action="https://formspree.io/f/maqdelyp" method="POST">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Phone Number" name="phone">
+        <input type="text" placeholder="Keychain Type/Model" name="keychain_model" required>
+          <input type="text" placeholder="Image Prompt (e.g. batman)" name="image_prompt">
+        <label class="form-label">Colour Combination</label>
+        <select name="colour" id="colour-select" onchange="toggleOtherColour()">
+          <option value="Red | White Engraving">Red | White Engraving</option>
+          <option value="Black | White Engraving">Black | White Engraving</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="text" name="other_colour" id="other-colour-input" placeholder="Describe your custom colour/engraving" style="display:none; margin-top:10px;" />
+        <script>
+        function toggleOtherColour() {
+          var select = document.getElementById('colour-select');
+          var input = document.getElementById('other-colour-input');
+          if (select.value === 'Other') {
+            input.style.display = 'block';
+          } else {
+            input.style.display = 'none';
+          }
+        }
+        </script>
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
+          <label class="file-label">Text Image</label>
+          <input type="file" name="text_image" accept="image/*">
+          <label class="file-label">Keychain Layout (optional)</label>
+          <input type="file" name="keychain_layout" accept="image/*">
+        </div>
         <button type="submit" class="btn">CONFIRM</button>
       </form>
     </div>
